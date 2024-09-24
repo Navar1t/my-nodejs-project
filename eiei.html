@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--<style>
+        #box {
+        
+        position: relative;
+        margin-bottom: 2rem;
+        }
+        </style>-->
+
+    <script>
+
+        $(document).ready(function(){
+            $("#cal").click(function(){
+                let r = $("#cc").val();
+                $('#pol').text(3.14*r*r);});
+            }); 
+
+            //2.
+           /*  $("#changeText").click(function(){
+
+    $("#text").text("ข้อความถูกเปลี่ยนโดย jQuery!");
+    });
+        //4.
+        $("#hide").click(function(){
+    $("#text").hide();
+    });
+    $("#show").click(function(){
+    $("#text").show();
+    });
+
+
+
+
+    <p id="text">นี่คือย่อหน้าที่จะถูกแก้ไขโดย jQuery</p>
+    <button id="changeText">เปลี่ยนข้อความ</button>
+    
+    <button id="hide">ซ่อน</button>
+<button id="show">แสดง</button>
+<button id="moveBox">ขยับกล่อง</button>
+<button id="changeColor">เปลี่ยนสี</button>
+<button id="animateBox">animateBox</button>
+
+<div id="box" style="width:100px; height:100px; background-color:red;"></div> 
+
+        //7.
+    $("#moveBox").click(function(){
+    $("#box").animate({left: '250px'});
+    });
+    //.8
+    $("#changeColor").click(function(){
+    $("#box").css("background-color", "blue");
+    });
+
+    $("#animateBox").click(function(){
+    $("#box").animate({
+    left: '250px',
+    height: '150px',
+    width: '150px',
+    }, 1000); 
+    $("#box").css("background-color", "green");
+    });*/
+    
+        
+        
+    </script>
+</head>
+<body>
+    <h1>ยินดีต้อนรับ</h1>
+    <h2 id="pol">ผลลัพธ์</h2>
+
+<input type="text" id="cc"><button id="cal">Calculate</button>
+</body>
+</html>
